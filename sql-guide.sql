@@ -1,50 +1,8 @@
--- use students;
+use students;
 
--- CREATE TABLE student (
---     id INT AUTO_INCREMENT PRIMARY KEY,
---     name VARCHAR(100) NOT NULL,
---     email VARCHAR(100) NOT NULL UNIQUE,
---     gender ENUM('Male', 'Female', 'Other'),
---     DOB DATE,
---     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
--- );
+-- update db
+-- update student gender set gender = 'Male',email = 'aarav12.sharma@gmail.com' where id=1;
+-- update student set gender = 'Female' where id = 3;
+-- update student set email = 'priyasingh@example.com' where id = 4;
 
--- insert -->
--- INSERT INTO student (name, email, gender, DOB) VALUES
--- ('Aarav Sharma', 'aarav.sharma@gmail.com', 'Male', '2001-03-15'),
--- ('Ananya Verma', 'ananya.verma@gmail.com', 'Female', '2002-07-22'),
--- ('Rohan Mehta', 'rohan.mehta@gmail.com', 'Male', '2000-11-10'),
--- ('Priya Singh', 'priya.singh@gmail.com', 'Female', '2001-01-05'),
--- ('Kunal Patel', 'kunal.patel@gmail.com', 'Male', '1999-06-18'),
--- ('Neha Gupta', 'neha.gupta@gmail.com', 'Female', '2002-09-30'),
--- ('Arjun Nair', 'arjun.nair@gmail.com', 'Male', '2000-04-12'),
--- ('Sneha Iyer', 'sneha.iyer@gmail.com', 'Female', '2001-12-08'),
--- ('Vikram Rao', 'vikram.rao@gmail.com', 'Male', '1998-08-25'),
--- ('Pooja Malhotra', 'pooja.malhotra@gmail.com', 'Female', '2002-02-14'),
--- ('Rahul Das', 'rahul.das@gmail.com', 'Male', '1999-10-03'),
--- ('Isha Kapoor', 'isha.kapoor@gmail.com', 'Female', '2001-05-27'),
--- ('Siddharth Jain', 'siddharth.jain@gmail.com', 'Male', '2000-07-19'),
--- ('Kavya Reddy', 'kavya.reddy@gmail.com', 'Female', '2002-11-11'),
--- ('Amit Chawla', 'amit.chawla@gmail.com', 'Male', '1998-03-09'),
--- ('Nidhi Bansal', 'nidhi.bansal@gmail.com', 'Female', '2001-09-16'),
--- ('Manish Kumar', 'manish.kumar@gmail.com', 'Male', '1999-12-01'),
--- ('Ritika Saxena', 'ritika.saxena@gmail.com', 'Female', '2000-06-21'),
--- ('Dev Malani', 'dev.malani@gmail.com', 'Male', '2002-01-30'),
--- ('Ayesha Khan', 'ayesha.khan@gmail.com', 'Other', '2001-08-04');
-
--- querying the data
--- select name,gender from student;
--- select gender,name from student where gender='Female'; 
--- select gender,email,DOB from student where DOB < '2000-04-3'
--- select * from student where id <10
--- select * from student where DOB is not null;
--- select * from student where DOB is null;
--- select * from student where DOB between '2000-1-3' and '2005-2-4';
--- select * from student where gender = "Other"
--- select * from student where gender = "Female" AND DOB > '2000-3-4';
--- select * from student where gender = 'Male' and name like 'a%'
--- select * from student order by DOB desc;
--- select * from student order by DOB asc;
--- select * from student limit 6;
-
--- select * from student;
+select * from student;
